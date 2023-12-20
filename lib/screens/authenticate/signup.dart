@@ -66,6 +66,7 @@ class _RegisterState extends State<RegisterPage> {
                               color: const Color.fromARGB(255, 255, 255, 255),
                               fontWeight: FontWeight.w700),
                         ),
+                        // Textfield Email
                         Container(
                           width: 310,
                           child: Column(
@@ -84,34 +85,36 @@ class _RegisterState extends State<RegisterPage> {
                                 },
                                 cursorColor: Colors.red[800],
                                 decoration: InputDecoration(
-                                    contentPadding: EdgeInsets.all(15.0),
-                                    enabledBorder: const OutlineInputBorder(
-                                        borderSide: BorderSide(
-                                            width: 2,
-                                            color: Color.fromARGB(
-                                                255, 255, 255, 255)),
-                                        borderRadius: BorderRadius.all(
-                                            Radius.circular(10))),
-                                    focusedBorder: OutlineInputBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(12.0),
-                                        borderSide: const BorderSide(
-                                            width: 2,
-                                            color: Color.fromARGB(
-                                                255, 255, 255, 255))),
-                                    labelText: 'Masukkan E-mail',
-                                    labelStyle: TextStyle(
-                                        color: const Color.fromARGB(
-                                            255, 250, 250, 250),
-                                        fontSize: 15.0)),
+                                  contentPadding: EdgeInsets.all(15.0),
+                                  enabledBorder: const OutlineInputBorder(
+                                      borderSide: BorderSide(
+                                          width: 2,
+                                          color: Color.fromARGB(
+                                              255, 255, 255, 255)),
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(10))),
+                                  focusedBorder: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(12.0),
+                                      borderSide: const BorderSide(
+                                          width: 2,
+                                          color: Color.fromARGB(
+                                              255, 255, 255, 255))),
+                                  labelText: 'Masukkan E-mail',
+                                  labelStyle: TextStyle(
+                                      color: const Color.fromARGB(
+                                          255, 250, 250, 250),
+                                      fontSize: 15.0),
+                                  hintStyle: TextStyle(color: Colors.white),
+                                ),
                               ),
                               SizedBox(
                                 height: 20.0,
                               ),
+                              //Textfield Password
                               TextFormField(
                                 validator: (String? value) {
                                   if (value != null && value.isEmpty) {
-                                    return "E-mail tidak boleh kosong!";
+                                    return "Password tidak boleh kosong!";
                                   } else {
                                     return null;
                                   }
@@ -123,26 +126,27 @@ class _RegisterState extends State<RegisterPage> {
                                 cursorColor:
                                     const Color.fromARGB(255, 255, 255, 255),
                                 decoration: InputDecoration(
-                                    contentPadding: EdgeInsets.all(15.0),
-                                    enabledBorder: const OutlineInputBorder(
-                                        borderSide: BorderSide(
-                                            width: 2,
-                                            color: Color.fromARGB(
-                                                255, 255, 255, 255)),
-                                        borderRadius: BorderRadius.all(
-                                            Radius.circular(10))),
-                                    focusedBorder: OutlineInputBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(12.0),
-                                        borderSide: const BorderSide(
-                                            width: 2,
-                                            color: Color.fromARGB(
-                                                255, 255, 255, 255))),
-                                    labelText: 'Masukkan Kata Sandi',
-                                    labelStyle: TextStyle(
-                                        color: const Color.fromARGB(
-                                            255, 255, 255, 255),
-                                        fontSize: 15.0)),
+                                  contentPadding: EdgeInsets.all(15.0),
+                                  enabledBorder: const OutlineInputBorder(
+                                      borderSide: BorderSide(
+                                          width: 2,
+                                          color: Color.fromARGB(
+                                              255, 255, 255, 255)),
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(10))),
+                                  focusedBorder: OutlineInputBorder(
+                                      borderRadius: BorderRadius.circular(12.0),
+                                      borderSide: const BorderSide(
+                                          width: 2,
+                                          color: Color.fromARGB(
+                                              255, 255, 255, 255))),
+                                  labelText: 'Masukkan Kata Sandi',
+                                  labelStyle: TextStyle(
+                                      color: const Color.fromARGB(
+                                          255, 255, 255, 255),
+                                      fontSize: 15.0),
+                                  hintStyle: TextStyle(color: Colors.white),
+                                ),
                               ),
                               SizedBox(
                                 height: 20.0,
@@ -201,14 +205,6 @@ class _RegisterState extends State<RegisterPage> {
                             ],
                           ),
                         ),
-                        // Text(
-                        //   error,
-                        //   style: TextStyle(color: Colors.red[800]),
-                        // ),
-                        // Text(
-                        //   '©️Copyright 2023, sMovie.com',
-                        //   style: TextStyle(color: Colors.red[800]),
-                        // )
                       ],
                     ),
                   ),
